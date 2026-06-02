@@ -1,0 +1,36 @@
+
+/*======================
+      Footer
+======================*/
+
+    .footer{
+        background-color: #d50e0e;
+        width: 100%;
+        height:100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .socialLinks {
+        display: flex;
+        gap:15px;
+        font-size: 1.5em;
+        margin-top: 10px;
+        justify-content: center;
+        color: #fff;
+    }
+    .socialLinks a {
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+    .socialLinks .facebook:hover {
+        color: #0064E0;
+    }
+    .socialLinks .twitter:hover {
+        color: black;
+    }
+    .socialLinks .instagram:hover {
+        color: black;
+    }
