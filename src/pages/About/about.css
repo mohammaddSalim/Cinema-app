@@ -1,0 +1,377 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.branchesSection {
+    padding: 100px 40px 70px;
+    background-color: #0d0d0d;
+    text-align: center;
+}
+
+.sectionTitle {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.Red {
+    color: #d50e0e;
+    text-decoration: underline;
+}
+
+.sectionSubtitle {
+    color: #aaa;
+    font-size: 16px;
+    margin: 0 0 50px 0;
+}
+
+.branchesGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.branchCard {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 36px 30px 30px;
+    width: 240px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.branchCard:hover {
+    transform: translateY(-6px);
+    border-color: #d50e0e;
+    box-shadow: 0 8px 20px rgba(213, 14, 14, 0.4);
+}
+
+.branchCard.mainBranch {
+    border-color: #d50e0e;
+    box-shadow: 0 8px 20px rgba(213, 14, 14, 0.2);
+}
+
+.mainBranchTag {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d50e0e;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.branchIcon {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 16px;
+    background-color: rgba(213, 14, 14, 0.12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.branchIcon svg {
+    width: 26px;
+    height: 26px;
+    fill: #d50e0e;
+}
+
+.branchInfo h3 {
+    color: white;
+    font-size: 20px;
+    margin: 0 0 8px 0;
+}
+
+.branchLocation {
+    color: #aaa;
+    font-size: 14px;
+    margin: 0 0 24px 0;
+    line-height: 1.5;
+}
+
+.btnBranch {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #d50e0e;
+    color: #d50e0e;
+    padding: 9px 22px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btnBranch:hover {
+    background-color: #d50e0e;
+    color: white;
+}
+
+/*======================
+    Ticket Prices Section
+======================*/
+
+.pricesSection {
+    padding: 70px 40px 80px;
+    background-color: #080808;
+    text-align: center;
+}
+
+.screenBar {
+    margin-bottom: 40px;
+}
+
+.screenBar span {
+    display: inline-block;
+    background: linear-gradient(90deg, transparent, #d50e0e, transparent);
+    color: white;
+    font-size: 13px;
+    letter-spacing: 6px;
+    padding: 8px 50px;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: 0.85;
+}
+
+.pricesGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.priceTier {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    padding: 36px 28px 30px;
+    width: 240px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #2a2a2a;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.priceTier:hover {
+    transform: translateY(-6px);
+}
+
+.tierGlow {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    filter: blur(50px);
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.platinum .tierGlow { background: #b0c4de; }
+.gold .tierGlow     { background: #d50e0e; }
+.diamond .tierGlow  { background: #a78bfa; }
+
+.platinum { border-color: #4a6fa5; }
+.platinum:hover { box-shadow: 0 8px 20px rgba(74, 111, 165, 0.4); }
+
+.gold { border-color: #d50e0e; }
+.gold:hover { box-shadow: 0 8px 20px rgba(213, 14, 14, 0.4); }
+
+.diamond { border-color: #7c5cbf; }
+.diamond:hover { box-shadow: 0 8px 20px rgba(124, 92, 191, 0.4); }
+
+.popularTag {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d50e0e;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.tierRows {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.platinum .tierRows { color: #7fa8d8; }
+.gold .tierRows     { color: #d50e0e; }
+.diamond .tierRows  { color: #a78bfa; }
+
+.seatIcons {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.tierInfo h3 {
+    color: white;
+    font-size: 22px;
+    margin: 0 0 8px 0;
+}
+
+.tierDesc {
+    color: #aaa;
+    font-size: 13px;
+    margin: 0 0 20px 0;
+    line-height: 1.55;
+}
+
+.tierPrice {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 22px;
+}
+
+.tierPrice span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #777;
+}
+
+.tierPerks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #2a2a2a;
+    padding-top: 18px;
+    text-align: left;
+}
+
+.tierPerks li {
+    color: #ccc;
+    font-size: 14px;
+    padding: 5px 0 5px 20px;
+    position: relative;
+}
+
+.tierPerks li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #d50e0e;
+    font-weight: bold;
+}
+
+.pricesNote {
+    color: #555;
+    font-size: 13px;
+    margin: 0;
+}
+
+/*======================
+      Snack Menu Section
+======================*/
+
+.menuSection {
+    padding: 70px 40px 80px;
+    background-color: #0d0d0d;
+    text-align: center;
+}
+
+.menuCategories {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.menuCategory {
+    text-align: left;
+}
+
+.categoryTitle {
+    color: white;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.menuGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.menuCard {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 18px 24px;
+    flex: 1 1 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.menuCard:hover {
+    border-color: #d50e0e;
+    box-shadow: 0 4px 16px rgba(213, 14, 14, 0.2);
+}
+
+.menuItem {
+    color: #ccc;
+    font-size: 15px;
+    margin: 0;
+}
+
+.menuPrice {
+    color: #d50e0e;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+/*======================
+      Media Queries
+======================*/
+
+@media (max-width: 768px) {
+    
+    .branchesSection,
+    .pricesSection {
+        padding: 100px 20px 50px;
+    }
+
+    .sectionTitle {
+        font-size: 28px;
+    }
+
+    .branchCard,
+    .priceTier {
+        width: 100%;
+        max-width: 320px;
+    }
+}

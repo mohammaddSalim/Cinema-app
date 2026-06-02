@@ -1,0 +1,199 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contactSection {
+    padding: 100px 40px 70px;
+    background-color: #111;
+    text-align: center;
+}
+
+.sectionTitle {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.Red {
+    color: #d50e0e;
+    text-decoration: underline;
+}
+
+.sectionSubtitle {
+    color: #aaa;
+    font-size: 16px;
+    margin: 0 0 50px 0;
+}
+
+.contactWrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+/*======================
+     Info Cards
+======================*/
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 280px;
+}
+
+.infoCard {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.infoCard:hover {
+    border-color: #d50e0e;
+    box-shadow: 0 4px 16px rgba(213, 14, 14, 0.2);
+}
+
+.infoIcon {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(213, 14, 14, 0.12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d50e0e;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.infoText h4 {
+    color: white;
+    margin: 0 0 4px 0;
+    font-size: 15px;
+}
+
+.infoText p {
+    color: #aaa;
+    margin: 0;
+    font-size: 14px;
+}
+
+/*======================
+     Contact Form
+======================*/
+
+.contactForm {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 36px 32px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formRow {
+    display: flex;
+    gap: 16px;
+}
+
+.formRow .formGroup {
+    flex: 1;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formGroup label {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.formInput {
+    background-color: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    padding: 12px 14px;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.formInput::placeholder {
+    color: #555;
+}
+
+.formInput:focus {
+    border-color: #d50e0e;
+}
+
+.formTextarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.btnSubmit {
+    background-color: #d50e0e;
+    color: white;
+    border: 2px solid #d50e0e;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 13px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btnSubmit:hover {
+    background-color: transparent;
+    color: #d50e0e;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 768px) {
+    
+    .contactSection {
+        padding: 100px 20px 50px;
+    }
+
+    .contactInfo {
+        width: 100%;
+    }
+
+    .contactForm {
+        width: 100%;
+        padding: 24px 20px;
+    }
+
+    .formRow {
+        flex-direction: column;
+    }
+
+    .sectionTitle {
+        font-size: 28px;
+    }
+
+}
+
