@@ -1,5 +1,5 @@
 import './home.css';
-import Header from '../../components/Header/Header';
+import Header from '../../components/Header/header';
 import Footer from '../../components/Footer/footer';
 import HeroSection from '../../components/HeroSection/heroSection'
 import LatestMovies from '../../components/LatestMovies/latestMovies';
